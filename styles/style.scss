@@ -1,0 +1,717 @@
+@import "resetstyle";
+@import "variables";
+@import "mixins";
+
+
+#dtag{
+    @include dtag;
+#first{ 
+    @include one;
+a{
+   @include atag;
+}
+}
+}
+a.stag:hover {
+    background-color: greenyellow;
+}
+#ztag {
+    @include itag;
+}
+#gutag{
+    @include good;
+}
+.content {
+    margin-bottom: 100px;
+    padding-top: 80px;
+}
+.image-container img {
+    width: 100%;
+}
+.text-overlay{
+    @include overlay;
+}
+.text-overlay> h1{
+    @include htag;
+}
+#ptag{
+    @include green;
+}
+#green{
+    @include button ;
+    h2{ @include only; 
+    }
+}
+.imgtag{
+    width: 400px;
+    height: 130px;
+}
+.prime {
+    display: inline-block;
+}
+.story{
+    @include story;
+}
+.story:hover { 
+    @include forh;
+}
+.story > div {
+   @include div1;
+    h3{
+       @include h3;
+    }
+}
+#main{
+    @include main;
+}
+#big{
+    @include fbig;
+}
+#small{
+    @include ft;
+}
+#small>h4{
+    font-size: 32px;
+    color: #60c100;
+    font-family: $font;
+}
+#small>h5{
+    @include fh;
+}
+#etag{
+    @include etag;
+}
+#rtag{
+    @include frt;
+}
+#rtag>h1{
+    @include frh;
+}
+a> button{
+    @include abt;
+}
+#rtag> p{
+    font-family: $font;
+    font-size: 18px;
+    font-weight: 300;
+}
+button> h1{
+    color: white;
+}
+#ktag> img{
+    @include ktimg;
+}
+#ktag> img:hover{
+    width: 100%;
+    height: 380px;
+    transition: 2s;
+}
+#two{
+    @include two;
+}
+#two>p{
+    @include ftp;
+}
+.one{
+    margin-top:10px;
+    height:500px;
+    width: 350px;
+}
+#news{
+    font-size: 50px;
+    font-family: $font;
+    font-weight: 300;
+}
+.may{
+   @include may;
+    p{
+        font-family: $font;
+        color: black;
+    }
+}
+.may>img{
+    @include mayimg; 
+}
+.may> p{
+    @include mayp;
+}
+p> a{
+    text-decoration: none;
+    color: blue;
+}
+a:hover{
+    color: green
+}
+.icons{
+    @include icon;
+}
+.for{
+    @include forf;
+}
+.ball{
+    height: 300px;
+    width: 200px;
+}
+.circle{
+    @include circle;
+}
+#new{
+    @include new
+}
+.link> i{
+   @include forli;
+}
+.email{
+    @include email;
+}
+.link > span {
+ @include flispan;   
+}
+#last{
+    width: 100%;
+    height: 1100px;
+}
+.otag> img{ 
+    @include otagimg;
+}
+.otag{
+    margin-bottom: 20px;
+}
+.otag> div{
+    @include odiv;
+    p{
+    @include odivp;
+    }
+}
+footer{
+    @include ffooter;
+}
+.end{
+    width: 290px;
+    height: 250px;
+}
+#facebook{
+   @include ffb; 
+}
+#facebook> i{
+    color: $color;
+}
+.mtag{
+    color: $color;
+}
+#twitter{
+    @include ftw;
+}
+#logo{
+    @include flg;
+}
+#google{
+    @include fggl;
+}
+.end> p{
+    @include fendp; 
+}
+.end> a{
+    @include fenda;
+}
+.end>h1{
+    @include fendh1;
+}
+.end>img{
+   @include fendimg;
+}
+#clubs{
+    width: 100%;
+    margin-top: 50px;
+}
+#fclub{
+  @include fclub;
+}
+.sbj{
+   @include fsbj;
+}
+.sbj>p{
+    @include fendp;
+    font-size: 16px;
+    font-weight: 300;
+    color:black;
+}
+.sbj>h2{
+    @include fsbjh;
+}
+.sbj>h3{
+    @include fendp;
+    margin-top: 30px;
+    font-size: 22px;
+}
+footer{
+   @include ffoot;
+}
+#contact{
+  @include fcontact;
+}
+#contact> h1{
+   @include fcontacth;
+}
+#contact> h3{
+   @include fcontacthh;
+}
+#contact> p{
+    @include fendp;
+    font-size: 18px;
+    font-weight: 400;
+    color:gray;  
+    margin-bottom: 30px;
+}
+#icone >i{
+    color: gray;
+}
+#contact >a {
+       @include fcontacta;
+}
+#imgonl{
+   @include fimgonl;
+    img{
+        margin-top: 30px;
+        vertical-align: -80px;
+    }    
+}
+#newe{
+@include fnewe;
+}
+.article{
+    @include farticle;
+    h1{
+        @include fendh1;
+       @include farticleh;
+    }
+}
+.fnew{
+    @include ffnew;
+    img{
+       @include ffnewimg;
+    }
+}
+.ftxt{
+    @include fftext;
+    p{
+        @include fendp;
+        @include fftextp;
+    }
+}
+#onfimg{
+    @include fonfimg;
+}
+#fini{
+    @include ffini;
+}
+@keyframes round {
+    0%{ transform: rotate(0deg);}
+    100%{ transform: rotate(360deg);}
+
+}
+#iconss{
+    display: none;
+}
+.dropdown{
+    display: none;
+}
+#hide{
+    display: none;
+}
+@media only screen and (max-width:430px){
+    .image-container> img{
+        @include fimgcont; 
+    }
+    .text-overlay{
+        position: static;
+    }
+    .text-overlay>h1{
+        font-size: 30px;
+        margin-top: -150px;
+    }
+    .text-overlay>p{
+        display: none;
+    }
+    #green{
+        display: none;
+    }
+    #first>a{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+    }
+    .stag{
+        width: 110px;
+
+    }
+    #two{
+        display: flex;
+        flex-direction: row;
+        height: 2120px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #ztag{
+        display: none;
+    }
+    .one{
+        margin-top: 0px;
+    }
+    #iconss{
+        display: inline-block;
+        font-size: 60px;
+        margin-left: -300px;
+    }
+    #gutag{
+        margin-bottom: 750px;
+    }
+   #big{
+    display: none;
+   }
+   .icons{
+    margin-bottom: 150px;
+   }
+   #facebook{
+    width: 50px;
+   height: 50px;
+   border-radius: 51px;
+   }
+   #facebook>i {
+    font-size: 30px;
+    margin-left: -3px;
+   vertical-align: 20px;
+   
+   }
+   #twitter{
+    width: 50px;
+    height: 50px;
+    border-radius: 51px;
+    i{
+        margin-left: -10px;
+        margin-top: -10px;
+    }
+   }
+   #google{
+    width: 50px;
+    height: 50px;
+    border-radius: 51px;
+        i{
+            margin-left: -10px;
+            margin-top: -0px;
+        }
+   }
+   #last{
+    display: none;
+   }
+   footer{
+    height: 1400px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+   }
+   .end{
+    margin-top: 0px;
+    display: inline-block;
+    margin-left: 50px;
+   }
+   #newe{
+    height: 4700px ;
+    display: flex;
+    width: 100%;
+    align-items: center;
+   }
+   .article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 800px;
+   }
+   .article>h1{
+    font-size: 40px;
+    width: 380px;
+    margin-left: 50px;
+   }
+   .ftxt{
+    display: block;
+    height: 400px;
+    width: 350px;
+    margin-left: -250px;
+   }
+   .fnew{
+    display: block;
+    width: 340px;
+    margin-left: -10px;
+   }
+   #clubs{
+    margin-top: 100px;
+   }
+   #contact{
+    width: 400px;
+   }
+   #imgonl>img {
+    width: 100%;
+   }
+   .sbj{
+    height: 450px;
+   }
+   #clubs{
+    margin-left: 20px;
+   }
+}
+@media only screen and (min-width:431px) and (max-width:930px) {
+    .image-container> img{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        position: static;
+    }
+    .text-overlay{
+        position: static;
+    }
+    .text-overlay>h1{
+        font-size: 35px;
+        margin-top: -150px;
+    }
+    #ptag{
+        position: relative;
+        margin-top: -100px;
+        font-size: 20px;
+    }
+    #gutag{
+        height: 1400px;
+    }
+    #small{
+        display: none;
+    }
+    #ktag{
+        display: none;
+    }
+    #etag{
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    #big{
+        height: 300px;
+    }
+    #last{
+        display: flex;
+        flex-direction: column;
+        height: 1900px;
+        justify-content: space-between;
+        img{
+            width: 150px;
+            height: 150px;
+            margin-left: -80px;
+            margin-top: 100px;
+        }
+        #onlyonw{
+            margin-left: 50px;
+            
+        }
+        #onlyonr{
+            margin-left: 50px;
+        }
+        #hide{
+            display: block;
+            font-family: "BPG Nateli Mtavruli", sans-serif;
+            font-weight: bold;
+            color: green;
+            font-size: 40px;
+            margin: 0 auto;
+        }
+        #onlyonu{
+            margin-left: 50px;
+        }
+        p{
+            width: 100%;
+        }
+        .otag {
+            display: flex;
+            margin-top: 30px;
+        }
+        .otag>div{
+            width: 350px;
+            height: 480px;
+            margin-left: 40px;
+            padding: 10px;
+            background-color: gray;
+            border-radius:  15px 15px ;
+            p{
+                color: white;
+            }
+        }
+    }
+    #two{
+        height: 1900px;
+    }
+    .one{
+        margin-bottom: 20px;
+    }
+    footer{
+        height: 1400px;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 100px;
+       }
+       .end{
+        margin-top: 0px;
+        display: inline-block;
+        margin-left: 50px;
+       }
+       #newe{
+        height: 4700px ;
+        display: flex;
+        width: 100%;
+        align-items: center;
+       }
+       .article{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 800px;
+       }
+       .article>h1{
+        font-size: 40px;
+        width: 380px;
+        margin-left: 50px;
+       }
+       .ftxt{
+        display: block;
+        height: 400px;
+        width: 350px;
+        margin-left: -250px;
+       }
+       .fnew{
+        display: block;
+        width: 340px;
+        margin-left: -10px;
+       }
+       #clubs{
+        margin-top: 100px;
+       }
+       #contact{
+        width: 400px;
+       }
+       #imgonl>img {
+        width: 100%;
+       }
+       #green {
+        display: none;
+       }
+       .sbj{
+        height: 450px;
+       }
+       #clubs{
+        margin-left: 20px;
+       }
+       #facebook{
+        width: 60px;
+       height: 60px;
+       border-radius: 51px;
+       }
+       #facebook>i {
+        font-size: 35px;
+        margin-left: 5px;
+       vertical-align: 20px;
+       }
+       #twitter{
+        width: 60px;
+        height: 60px;
+        border-radius: 51px;
+       }
+       #google{
+        width: 60px;
+        height: 60px;
+        border-radius: 51px;
+        i{
+            margin-left: -4px;
+        }
+       }
+       .article{
+        margin-left: 100px;
+        margin-bottom: 20px;
+       }
+       #newe{
+        height: 4750px ;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        border: 2px solid red;
+       }
+       #wid{
+        width: 100%;
+        height: 990px;
+        background: url(https://t3.ftcdn.net/jpg/00/43/68/68/360_F_43686826_odSbSmUr2ex5f8MSdDnrHpdxKvGRITEx.jpg);
+        display: inline-block;
+       }
+       #widt{
+        width: 100%;
+        height: 1900px;
+       }
+       #blackboard{
+        margin-top: 0px;
+        margin-left: -350px;
+        img{
+            vertical-align: -100px;
+            width: 620px;
+            height: 400px
+        }
+    }
+}
+#dfetag{
+   @include fdfetag;
+}
+#widt{
+    width: 100%;
+    height: 720px;
+    background: url(https://t3.ftcdn.net/jpg/00/43/68/68/360_F_43686826_odSbSmUr2ex5f8MSdDnrHpdxKvGRITEx.jpg);
+}
+#blackboard{
+    height: 700px;
+    img{
+        position: relative;
+        margin-top: 180px;
+        margin-left: 350px;
+    }
+}
+#utag{
+    @include futag;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+input{
+    @include finput;
+}
+label{
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+#input[type=text]:focus {
+    border: 3px solid #555;
+}
+input[type=submit] {
+    @include finputsm;
+  }
+  #flog {
+    @include fflog;
+  }
+  #floga{
+   @include ffloga;
+  }
+  #wid{
+    display: none;
+  }
+
+
+
+
+    

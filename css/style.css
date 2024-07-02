@@ -1,0 +1,1181 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#dtag {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  height: 70px;
+}
+#dtag #first {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+#dtag #first a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  font-weight: 300;
+}
+
+a.stag:hover {
+  background-color: greenyellow;
+}
+
+#ztag {
+  font-size: 40px;
+  margin-top: -10px;
+  color: gray;
+}
+
+#gutag {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 0px;
+}
+
+.content {
+  margin-bottom: 100px;
+  padding-top: 80px;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.text-overlay {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.text-overlay > h1 {
+  position: absolute;
+  top: 20%;
+  color: white;
+  font-size: 85px;
+}
+
+#ptag {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+#green {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  width: 250px;
+  height: 50px;
+  border-radius: 40px;
+  border: none;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: green;
+  font-size: 20px;
+}
+#green h2 {
+  font-size: 25px;
+  margin-top: -8px;
+  font-weight: 300;
+  color: white;
+}
+
+.imgtag {
+  width: 400px;
+  height: 130px;
+}
+
+.prime {
+  display: inline-block;
+}
+
+.story {
+  width: 400px;
+  height: 280px;
+  background-color: #f7bb00;
+  position: static;
+  transition: 2s;
+  border-radius: 10px;
+}
+
+.story:hover {
+  height: 330px;
+  width: 430px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: 2s;
+}
+
+.story > div {
+  width: 350px;
+  height: 160px;
+  margin-top: 0px;
+  padding-top: 50px;
+  margin-left: 20px;
+}
+.story > div h3 {
+  font-size: 25px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
+#main {
+  height: 3850px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#big {
+  width: 100%;
+  display: flex;
+  height: 780px;
+  background-image: url(https://newton.edu.ge/wp-content/uploads/2019/04/h4-backgoround-1.png);
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#small {
+  width: 550px;
+  height: 200px;
+  margin: 20px;
+}
+
+#small > h4 {
+  font-size: 32px;
+  color: #60c100;
+  font-family: "BPG DEJAVU SANS";
+}
+
+#small > h5 {
+  font-family: "BPG DEJAVU SANS";
+  color: #42495b;
+  font-size: 50px;
+  font-weight: 700;
+  margin-left: 12px;
+  margin-top: 30px;
+}
+
+#etag {
+  width: 550px;
+  height: 170px;
+  background-color: white;
+  margin-top: 350px;
+  margin-left: -790px;
+  display: inline-block;
+  padding-top: 10px;
+  box-shadow: 10px 10px 5px lightgray;
+  border-radius: 0 0 20px 20px;
+}
+
+#rtag {
+  width: 370px;
+  height: 170px;
+  display: inline-block;
+}
+
+#rtag > h1 {
+  font-size: 24px;
+  font-family: "BPG DEJAVU SANS";
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+a > button {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(0, 119, 0);
+  vertical-align: 40px;
+}
+
+#rtag > p {
+  font-family: "BPG DEJAVU SANS";
+  font-size: 18px;
+  font-weight: 300;
+}
+
+button > h1 {
+  color: white;
+}
+
+#ktag > img {
+  width: 100%;
+  height: 300px;
+  margin-top: 150px;
+  transition: 2s;
+}
+
+#ktag > img:hover {
+  width: 100%;
+  height: 380px;
+  transition: 2s;
+}
+
+#two {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+#two > p {
+  height: 50px;
+  margin-left: 0px;
+  font-size: 50px;
+  font-family: "BPG DEJAVU SANS";
+}
+
+.one {
+  margin-top: 10px;
+  height: 500px;
+  width: 350px;
+}
+
+#news {
+  font-size: 50px;
+  font-family: "BPG DEJAVU SANS";
+  font-weight: 300;
+}
+
+.may {
+  background-color: rgb(200, 200, 200);
+  height: 400px;
+  margin-top: -3px;
+  border-radius: 0 0 20px 20px;
+  padding-top: 10px;
+}
+.may p {
+  font-family: "BPG DEJAVU SANS";
+  color: black;
+}
+
+.may > img {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
+.may > p {
+  display: inline-block;
+  font-family: "BPG DEJAVU SANS";
+  vertical-align: 10px;
+  display: inline-block;
+  color: rgb(96, 90, 90);
+}
+
+p > a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  color: green;
+}
+
+.icons {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.for {
+  margin-left: 52px;
+  font-size: 25px;
+  font-family: "BPG DEJAVU SANS";
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: -5px;
+}
+
+.ball {
+  height: 300px;
+  width: 200px;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  background-color: green;
+  border-radius: 40px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+
+#new {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.link > i {
+  font-size: 40px;
+  color: gray;
+  margin-top: 12px;
+  margin-left: 15px;
+}
+
+.email {
+  font-size: 20px;
+  font-family: "BPG DEJAVU SANS";
+  color: rgb(96, 90, 90);
+  margin-bottom: 10px;
+}
+
+.link > span {
+  font-size: 40px;
+  margin-left: 14px;
+  margin-top: 15px;
+  color: rgb(96, 90, 90);
+  margin-left: 15px;
+}
+
+#last {
+  width: 100%;
+  height: 1100px;
+}
+
+.otag > img {
+  width: 300px;
+  display: inline-block;
+  animation: round 5s infinite;
+}
+
+.otag {
+  margin-bottom: 20px;
+}
+
+.otag > div {
+  height: 200px;
+  width: 800px;
+  margin-left: 40px;
+  vertical-align: 80px;
+}
+.otag > div p {
+  font-family: "BPG DEJAVU SANS";
+  vertical-align: 5px;
+  display: inline-block;
+  color: rgb(96, 90, 90);
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+  background-color: #000000;
+}
+
+.end {
+  width: 290px;
+  height: 250px;
+}
+
+#facebook {
+  font-size: 42px;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-top: 14px;
+  background-color: #4267B2;
+  color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 60px;
+}
+
+#facebook > i {
+  color: white;
+}
+
+.mtag {
+  color: white;
+}
+
+#twitter {
+  font-size: 30px;
+  margin-top: 10px;
+  padding-left: 18px;
+  padding-top: 16px;
+  background-color: white;
+  color: #1DA1F2;
+  width: 70px;
+  height: 70px;
+  border-radius: 60px;
+}
+
+#logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 250px;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+#google {
+  font-size: 28px;
+  margin-top: 10px;
+  padding-left: 17px;
+  padding-top: 18px;
+  background-color: #db4a39;
+  color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+
+.end > p {
+  margin-top: 8px;
+  font-family: "BPG DEJAVU SANS";
+  color: rgb(96, 90, 90);
+  font-size: 19px;
+}
+
+.end > a {
+  color: #5f66b0;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.end > h1 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: white;
+  margin-top: 20px;
+  font-weight: 300;
+  font-family: "BPG DEJAVU SANS";
+}
+
+.end > img {
+  width: 70px;
+  height: 70px;
+  margin-left: 100px;
+}
+
+#clubs {
+  width: 100%;
+  margin-top: 50px;
+}
+
+#fclub {
+  display: flex;
+  height: 2200px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.sbj {
+  width: 400px;
+  height: 350px;
+  background-color: rgb(134, 176, 218);
+  transition: 2s;
+  padding: 20px;
+  box-shadow: rgb(156, 156, 156) 5px 5px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  margin-top: 22px;
+}
+
+.sbj > p {
+  margin-top: 8px;
+  font-family: "BPG DEJAVU SANS";
+  color: rgb(96, 90, 90);
+  font-size: 19px;
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+}
+
+.sbj > h2 {
+  font-size: 39px;
+  font-family: "ALK Tall Mtavruli", sans-serif;
+  margin-bottom: 20px;
+}
+
+.sbj > h3 {
+  margin-top: 8px;
+  font-family: "BPG DEJAVU SANS";
+  color: rgb(96, 90, 90);
+  font-size: 19px;
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+footer {
+  width: 100%;
+  height: 320px;
+  background-color: #232936;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#contact {
+  width: 520px;
+  height: 800px;
+  margin-top: 100px;
+  display: inline-block;
+  padding: 20px;
+}
+
+#contact > h1 {
+  color: #60c100;
+  font-size: 25px;
+  font-family: "Arial GEO BoldItalic", sans-serif;
+  margin-bottom: 30px;
+}
+
+#contact > h3 {
+  font-size: 35px;
+  font-weight: 600;
+  font-family: "BPG Arial Caps", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#contact > p {
+  margin-top: 8px;
+  font-family: "BPG DEJAVU SANS";
+  color: rgb(96, 90, 90);
+  font-size: 19px;
+  font-size: 18px;
+  font-weight: 400;
+  color: gray;
+  margin-bottom: 30px;
+}
+
+#icone > i {
+  color: gray;
+}
+
+#contact > a {
+  text-decoration: none;
+  color: gray;
+  margin-left: 5px;
+  font-size: 25px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+#imgonl {
+  display: inline-block;
+  height: 1000px;
+  margin-top: 50px;
+}
+#imgonl img {
+  margin-top: 30px;
+  vertical-align: -80px;
+}
+
+#newe {
+  width: 100%;
+  height: 2300px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: url(https://t4.ftcdn.net/jpg/03/17/45/57/360_F_317455782_LrMx55NaLFqpFUgepw7N6Sp2gNOj1SwC.jpg);
+}
+
+.article {
+  width: 100%;
+  height: 550px;
+  margin-top: 10px;
+}
+.article h1 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: white;
+  margin-top: 20px;
+  font-weight: 300;
+  font-family: "BPG DEJAVU SANS";
+  color: black;
+  font-weight: bold;
+  margin-left: 290px;
+  font-size: 45px;
+  font-family: "ALK Tall Mtavruli", sans-serif;
+  width: 600px;
+}
+
+.fnew {
+  width: 400px;
+  height: 250px;
+  display: inline-block;
+}
+.fnew img {
+  width: 100%;
+  height: 100%;
+  margin-left: 50px;
+  display: inline-block;
+}
+
+.ftxt {
+  width: 590px;
+  height: 230px;
+  background-color: #0070a0;
+  border-radius: 0 15px 15px 0;
+  padding: 10px;
+  vertical-align: 25px;
+  display: inline-block;
+}
+.ftxt p {
+  margin-top: 8px;
+  font-family: "BPG DEJAVU SANS";
+  color: rgb(96, 90, 90);
+  font-size: 19px;
+  font-family: "BPG Glaho", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 10px;
+}
+
+#onfimg {
+  margin-top: 100px;
+  width: 100%;
+  height: 500px;
+  margin-bottom: -25px;
+}
+
+#fini {
+  background-image: url(https://dennymfg.com/cdn/shop/products/cp7801_High_grande.jpg?v=1618842593);
+  width: 100%;
+  height: 1000px;
+}
+
+@keyframes round {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#iconss {
+  display: none;
+}
+
+.dropdown {
+  display: none;
+}
+
+#hide {
+  display: none;
+}
+
+@media only screen and (max-width: 430px) {
+  .image-container > img {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: static;
+  }
+  .text-overlay {
+    position: static;
+  }
+  .text-overlay > h1 {
+    font-size: 30px;
+    margin-top: -150px;
+  }
+  .text-overlay > p {
+    display: none;
+  }
+  #green {
+    display: none;
+  }
+  #first > a {
+    display: none;
+  }
+  .dropdown {
+    display: block;
+  }
+  .stag {
+    width: 110px;
+  }
+  #two {
+    display: flex;
+    flex-direction: row;
+    height: 2120px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #ztag {
+    display: none;
+  }
+  .one {
+    margin-top: 0px;
+  }
+  #iconss {
+    display: inline-block;
+    font-size: 60px;
+    margin-left: -300px;
+  }
+  #gutag {
+    margin-bottom: 750px;
+  }
+  #big {
+    display: none;
+  }
+  .icons {
+    margin-bottom: 150px;
+  }
+  #facebook {
+    width: 50px;
+    height: 50px;
+    border-radius: 51px;
+  }
+  #facebook > i {
+    font-size: 30px;
+    margin-left: -3px;
+    vertical-align: 20px;
+  }
+  #twitter {
+    width: 50px;
+    height: 50px;
+    border-radius: 51px;
+  }
+  #twitter i {
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+  #google {
+    width: 50px;
+    height: 50px;
+    border-radius: 51px;
+  }
+  #google i {
+    margin-left: -10px;
+    margin-top: 0px;
+  }
+  #last {
+    display: none;
+  }
+  footer {
+    height: 1400px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .end {
+    margin-top: 0px;
+    display: inline-block;
+    margin-left: 50px;
+  }
+  #newe {
+    height: 4700px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 800px;
+  }
+  .article > h1 {
+    font-size: 40px;
+    width: 380px;
+    margin-left: 50px;
+  }
+  .ftxt {
+    display: block;
+    height: 400px;
+    width: 350px;
+    margin-left: -250px;
+  }
+  .fnew {
+    display: block;
+    width: 340px;
+    margin-left: -10px;
+  }
+  #clubs {
+    margin-top: 100px;
+  }
+  #contact {
+    width: 400px;
+  }
+  #imgonl > img {
+    width: 100%;
+  }
+  .sbj {
+    height: 450px;
+  }
+  #clubs {
+    margin-left: 20px;
+  }
+}
+@media only screen and (min-width: 431px) and (max-width: 930px) {
+  .image-container > img {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: static;
+  }
+  .text-overlay {
+    position: static;
+  }
+  .text-overlay > h1 {
+    font-size: 35px;
+    margin-top: -150px;
+  }
+  #ptag {
+    position: relative;
+    margin-top: -100px;
+    font-size: 20px;
+  }
+  #gutag {
+    height: 1400px;
+  }
+  #small {
+    display: none;
+  }
+  #ktag {
+    display: none;
+  }
+  #etag {
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+  #big {
+    height: 300px;
+  }
+  #last {
+    display: flex;
+    flex-direction: column;
+    height: 1900px;
+    justify-content: space-between;
+  }
+  #last img {
+    width: 150px;
+    height: 150px;
+    margin-left: -80px;
+    margin-top: 100px;
+  }
+  #last #onlyonw {
+    margin-left: 50px;
+  }
+  #last #onlyonr {
+    margin-left: 50px;
+  }
+  #last #hide {
+    display: block;
+    font-family: "BPG Nateli Mtavruli", sans-serif;
+    font-weight: bold;
+    color: green;
+    font-size: 40px;
+    margin: 0 auto;
+  }
+  #last #onlyonu {
+    margin-left: 50px;
+  }
+  #last p {
+    width: 100%;
+  }
+  #last .otag {
+    display: flex;
+    margin-top: 30px;
+  }
+  #last .otag > div {
+    width: 350px;
+    height: 480px;
+    margin-left: 40px;
+    padding: 10px;
+    background-color: gray;
+    border-radius: 15px 15px;
+  }
+  #last .otag > div p {
+    color: white;
+  }
+  #two {
+    height: 1900px;
+  }
+  .one {
+    margin-bottom: 20px;
+  }
+  footer {
+    height: 1400px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .end {
+    margin-top: 0px;
+    display: inline-block;
+    margin-left: 50px;
+  }
+  #newe {
+    height: 4700px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 800px;
+  }
+  .article > h1 {
+    font-size: 40px;
+    width: 380px;
+    margin-left: 50px;
+  }
+  .ftxt {
+    display: block;
+    height: 400px;
+    width: 350px;
+    margin-left: -250px;
+  }
+  .fnew {
+    display: block;
+    width: 340px;
+    margin-left: -10px;
+  }
+  #clubs {
+    margin-top: 100px;
+  }
+  #contact {
+    width: 400px;
+  }
+  #imgonl > img {
+    width: 100%;
+  }
+  #green {
+    display: none;
+  }
+  .sbj {
+    height: 450px;
+  }
+  #clubs {
+    margin-left: 20px;
+  }
+  #facebook {
+    width: 60px;
+    height: 60px;
+    border-radius: 51px;
+  }
+  #facebook > i {
+    font-size: 35px;
+    margin-left: 5px;
+    vertical-align: 20px;
+  }
+  #twitter {
+    width: 60px;
+    height: 60px;
+    border-radius: 51px;
+  }
+  #google {
+    width: 60px;
+    height: 60px;
+    border-radius: 51px;
+  }
+  #google i {
+    margin-left: -4px;
+  }
+  .article {
+    margin-left: 100px;
+    margin-bottom: 20px;
+  }
+  #newe {
+    height: 4750px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: 2px solid red;
+  }
+  #wid {
+    width: 100%;
+    height: 990px;
+    background: url(https://t3.ftcdn.net/jpg/00/43/68/68/360_F_43686826_odSbSmUr2ex5f8MSdDnrHpdxKvGRITEx.jpg);
+    display: inline-block;
+  }
+  #widt {
+    width: 100%;
+    height: 1900px;
+  }
+  #blackboard {
+    margin-top: 0px;
+    margin-left: -350px;
+  }
+  #blackboard img {
+    vertical-align: -100px;
+    width: 620px;
+    height: 400px;
+  }
+}
+#dfetag {
+  max-width: 100%;
+  height: 800px;
+  border: 2px solid green;
+}
+
+#widt {
+  width: 100%;
+  height: 720px;
+  background: url(https://t3.ftcdn.net/jpg/00/43/68/68/360_F_43686826_odSbSmUr2ex5f8MSdDnrHpdxKvGRITEx.jpg);
+}
+
+#blackboard {
+  height: 700px;
+}
+#blackboard img {
+  position: relative;
+  margin-top: 180px;
+  margin-left: 350px;
+}
+
+#utag {
+  position: absolute;
+  margin-top: -330px;
+  margin-left: 550px;
+  width: 330px;
+  height: 270px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+input {
+  width: 280px;
+  height: 39px;
+  padding-left: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #99999A;
+  border: 2px solid #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+  justify-content: space-between;
+}
+
+label {
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+#input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+input[type=submit] {
+  width: 295px;
+  background-color: rgb(0, 85, 0);
+  color: white;
+  padding-left: 120px;
+  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#flog {
+  color: white;
+  font-size: 30px;
+  margin-left: 50px;
+  margin-bottom: 15px;
+}
+
+#floga {
+  text-decoration: none;
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
+  margin-left: 60px;
+}
+
+#wid {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
